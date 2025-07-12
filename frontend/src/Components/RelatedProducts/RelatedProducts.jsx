@@ -28,7 +28,7 @@ const RelatedProducts = () => {
   const [relatedProducts, setRelatedProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/allproducts')
+    fetch('https://ecommerce-backend-5tcn.onrender.com/allproducts')
       .then((res) => res.json())
       .then((data) => {
         // You can filter for related items if needed
